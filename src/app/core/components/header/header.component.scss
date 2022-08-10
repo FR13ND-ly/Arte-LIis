@@ -1,0 +1,32 @@
+@use '@angular/material' as mat;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 8rem;
+    background-color: var(--background-color-2);
+    &__logo {
+        width: 150px;
+        cursor: pointer;
+    }
+    &__nav-item {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 15px;
+        height: 20px;
+        margin: 0 5px;
+        line-height: 20px;
+        border-radius: 100vmax;
+        transition: .2s cubic-bezier(0, 0, 0.1, 1);
+        &:hover {
+            color: #fff;
+            background: linear-gradient(var(--primary-color), var(--primary-color-secondary));
+        }
+    }
+    &__nav-item--activated {
+        @include mat.elevation(4);
+        color: var(--primary-color);
+    }
+}

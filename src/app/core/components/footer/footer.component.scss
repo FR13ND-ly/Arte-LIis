@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #363636;
+    color: #fff;
+    padding: 3rem 10rem 6rem;
+    text-align: left;
+    &__sections {
+        gap: 2rem;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__section-title {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    &__section-text {
+        line-height: 1.4;
+    }
+    &__logo {
+        cursor: pointer;
+    }
+    &__divider {
+        background-color: #fff;
+        width: 100%;
+        height: .5px;
+        margin: 1rem 0;
+    }
+    &__copyright-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

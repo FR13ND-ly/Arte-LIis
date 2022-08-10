@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-sizing: border-box;
+    padding: 2rem 10%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: var(--background-color-2);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    &__links {
+        display: flex;
+        gap: 1rem;
+        * {
+            text-decoration: none;
+        }
+    }
+    &__link {
+        color: #1976d2;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &:hover {
+        @include mat.elevation(2)
+    }
+}

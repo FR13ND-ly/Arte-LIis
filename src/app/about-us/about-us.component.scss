@@ -1,0 +1,22 @@
+.hero__description {
+    font-weight: bold;
+}
+
+.workgroup {
+    color: #fff;
+    padding: 2rem 3rem;
+    width: 50vw;
+    box-sizing: border-box;
+    margin: 5rem;
+    margin-left: 25vw;
+    margin-top: 0;
+    border-radius: 20px;
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: normal;
+    }
+    &__line {
+        font-size: 1rem;
+    }
+}

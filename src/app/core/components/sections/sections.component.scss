@@ -1,0 +1,57 @@
+@use '@angular/material' as mat;
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 5rem 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 60%;
+    &__author-wrapper {
+        padding: 2rem;
+        border-radius: 20px;
+        background-color: var(--background-color-2);
+        margin-bottom: 2rem;
+		&:hover {
+			@include mat.elevation(2);
+		}
+    }
+    &__author-name {
+        font-size: 1.8rem;
+		line-height: normal;
+		font-weight: bold;
+    }
+    &__author-description {
+        font-weight: normal;
+    }
+    &__images {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: .5rem;
+    }
+    &__line {
+        display: flex;
+        width: 100%;
+        gap: .5rem;
+    }
+    &__image-wrapper {
+        width: 100%;
+        cursor: pointer;
+        transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    &__image {
+        object-fit: cover;
+        height: 100%;
+        overflow: hidden;
+        max-height: 90vh;
+        width: 100%;
+        cursor: pointer;
+    }
+}

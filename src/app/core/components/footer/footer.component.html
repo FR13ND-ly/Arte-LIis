@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="footer__sections">
+        <div class="footer__section" *ngFor="let section of sections">
+            <h4 class="footer__section-title">{{ section.title }}</h4>
+            <p class="footer__section-text">{{ section.text }}</p>
+        </div>
+        <img class="footer__logo" routerLink="/" src="/assets/images/logo1.png" alt="Logo ARTE LIIS 50">
+    </div>
+    <div class="footer__divider"></div>
+    <div class="footer__copyright-wrapper">
+        <p class="footer__copyright">Copyright © anyart.2021</p>
+        <button class="footer__back-to-top-btn btn" (click)="onGoToTop()">De la început</button>
+    </div>
+</footer>

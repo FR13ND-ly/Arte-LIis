@@ -1,0 +1,56 @@
+<div class="hero parallax">
+    <h1 class="hero__title">CONCURSURI</h1>
+    <p class="hero__description">Ești pregătit pentru provocări? În această secțiune veți găsi informații despre concursuri de arte și competiții sportive, adrese utile pentru cei care doresc să urmeze cursurile unei facultăți de arte, design sau arhitectură.</p>
+</div>
+<div class="sections">
+    <section class="section">
+        <div class="section__author-wrapper">
+            <h1 class="section__author-name">Concursul național de artă fotografică Trasee în alb-negru și color ediția a XVII-a, luna mai 2021.</h1>
+            <div class="section__author-description">
+                <h3>Categorii: PEISAJ, PORTRET, NATURĂ STATICĂ (compoziție), FOTOGRAFIE DOCUMENTARĂ (fotoreportaj) și FOTOGRAFIE ÎNSCENATĂ (trucaj).</h3>
+                <h4><b>Condiții de participare:</b></h4>
+                <p>
+                    Pot participa elevi membri ai cercurilor foto din palate și cluburi, precum și elevi pasionați de fotografie de la școli primare, generale și licee.
+                    Fiecare elev poate participa cu un număr de maxim 5 lucrări fotografice.
+                    Lucrările nu trebuie să se încadreze într-o anumită temă, aceasta fiind la alegere, iar modul de realizare (eventual prelucrare) nu este unul prestabilit, elevului revenindu-i liberate de a se exprima în variate forme.
+                </p>
+                <b>Fotografiile vor fi trimise în format electronic, pentru selectare, la prof. arte plastice ANISOARA MUNTEANU pe Microsoft Teams, in chat-ul privat, cu mențiunea pentru concurs foto până la data de 20 mai 2021, alături de numele participantului, vârsta și clasa.</b>
+                <p>Link: <a href="https://www.facebook.com/Foto-Cineclub-B%C3%A2rlad-101713238363825" target="_blank">Facebook</a></p>
+            </div>
+            <div class="section__images">
+                <div class="section__line">
+                    <img class="section__image" src="/assets/images/contests/afis conc. foto.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" *ngFor="let section of sections">
+        <div class="section__author-wrapper">
+            <h1 class="section__author-name" [innerHTML]="section.details.name"></h1>
+            <div class="section__author-description" [innerHTML]="section.details.description"></div>
+        </div>
+        <div class="section__images">
+            <div class="section__line" *ngFor="let line of section.images" [attr.data-columns]="line.length">
+                <img class="section__image" [src]="image" *ngFor="let image of line">
+            </div>
+        </div>
+    </section>
+</div>
+<div class="hero parallax--second">
+    <div class="glass">
+        <h1 class="hero__title">ADMITERE LA FACULTATE</h1>
+        <h2 class="hero__subtitle">ARTE FRUMOASE, DESIGN, ARHITECTURĂ</h2>
+        <div class="hero__description">
+            <h3>Mai multe detalii pot fi obținute accesând link-urile de mai jos:</h3>
+            <a href="https://www.arteiasi.ro/site/?page_id=293">Link: Universitatea Națională de Arte „George Enescu” Iași</a>
+            <a href="https://unarte.org/admitere-sesiunea-august-septembrie-2021/">Link: Universitatea Națională de Arte București</a>
+            <a href="https://www.uad.ro/admitere/">Link: Universitatea de Artă și Design Cluj-Napoca</a>
+            <a href="https://arte.uvt.ro/admitere/admitere-licenta-2/">Link: Facultatea de Arte și Design Timișoara</a>
+            <a href="https://arh.tuiasi.ro/admitere-2021/">Link: Facultatea de Arhitectură „G.M. Cantacuzino” Iași</a>
+            <a href="https://www.ifmparis.fr/en/programs?subject=creation">Link: Institutul Francez de Modă</a>
+            <a href="https://www.aalto.fi/en/study-at-aalto">Link: Aalto University School of Arts, Design and Architecture Finlanda</a>
+            <a href="https://www.amsterdamuas.com/education/programmes/degree-programmes/degree-programmes.html">Link: Amsterdam University</a>
+            <a href="https://www.wdka.nl/admissions/associate-degree-arts-crafts">Link: Rotterdam University - Olanda</a>
+        </div>
+    </div>
+</div>

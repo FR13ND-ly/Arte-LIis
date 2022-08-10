@@ -1,0 +1,14 @@
+<div class="hero parallax">
+    <h1 class="hero__title">MUZEE & GALERII</h1>
+    <iframe class="resp-iframe" src="https://www.youtube.com/embed/Z4QoEOLGSq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="sections">
+    <div class="section" *ngFor="let section of sections">
+        <h1 class="section__title">{{ section.title }}</h1>
+        <p class="section__description">{{ section.description }}</p>
+        <div class="section__links">
+            <a class="section__link" [href]="section.link" target="_blank">{{ section.displayText }}</a>
+            <a class="facebook-icon facebook-icon--no-space" [href]="section.linkFacebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </div>
+</div>

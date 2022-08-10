@@ -1,0 +1,18 @@
+<div class="sections">
+    <section class="section" *ngFor="let section of sections">
+        <div class="section__author-wrapper">
+            <h1 class="section__author-name" [innerHTML]="section.details.name"></h1>
+            <div *ngIf="section.details.description" class="section__author-description" [innerHTML]="section.details.description"></div>
+        </div>
+        <div class="section__images">
+            <div class="section__line" *ngFor="let line of section.images" [attr.data-columns]="line.length">
+                <div class="section__image-wrapper" *ngFor="let image of line">
+                    <img class="section__image" [src]="image">
+                </div>
+            </div>
+        </div>
+        <div class="section__images">
+            <div [innerHTML]="video" *ngFor="let video of section.videos"></div>
+        </div>
+    </section>
+</div>
